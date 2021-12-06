@@ -47,9 +47,7 @@ void Dice::updateScores()
 	scores[3] = std::count(dice.begin(), dice.end(), 4) * 4;
 	scores[4] = std::count(dice.begin(), dice.end(), 5) * 5;
 	scores[5] = std::count(dice.begin(), dice.end(), 6) * 6;
-
 	match();
-
 	scores[12] = std::accumulate(dice.begin(), dice.end(), 0);
 }
 
@@ -119,7 +117,9 @@ void Dice::match()
 		scores[8] = 25;
 	}
 	// ?1234, 1234?, ?2345, 2345?, ?3456, 3456? - Small Straight
-	if (PatternMatch(dice, "1234?") || PatternMatch(dice, "?1234") || PatternMatch(dice, "2345?") || PatternMatch(dice, "?2345") || PatternMatch(dice, "?3456") || PatternMatch(dice, "?3456"))
+	if (PatternMatch(dice, "1234?") || PatternMatch(dice, "?1234") || PatternMatch(dice, "12?34")
+	|| PatternMatch(dice, "2345?") || PatternMatch(dice, "?2345") || PatternMatch(dice, "23?45")
+	|| PatternMatch(dice, "?3456") || PatternMatch(dice, "?3456") || PatternMatch(dice, "34?56"))
 	{
 		scores[9] = 30;
 	}

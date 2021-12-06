@@ -144,13 +144,17 @@
     <ClCompile Include="Controller.cpp" />
     <ClCompile Include="Dice.cpp" />
     <ClCompile Include="Die.cpp" />
-    <ClCompile Include="FiveDice0.1.cpp" />
+    <ClCompile Include="FiveDice.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayerTable.cpp" />
     <ClCompile Include="ScoreTable.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Controller.h" />
     <ClInclude Include="Dice.h" />
     <ClInclude Include="Die.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="PlayerTable.h" />
     <ClInclude Include="ScoreTable.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

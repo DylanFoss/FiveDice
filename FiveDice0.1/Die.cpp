@@ -3,17 +3,23 @@
 Die::Die()
 {
 	m_value = (rand() % 6 + 1);
+    held = false;
+
     screenWidth = 120;
 };
 
 Die::Die(int value)
 {
 	m_value = value;
+    held = false;
+
+    screenWidth = 120;
 };
 
 void Die::Roll()
 {
-	m_value = (rand() % 6 + 1);
+    if (held == false)
+	    m_value = (rand() % 6 + 1);
 };
 
 void Die::draw(wchar_t* screen, int x, int y)
@@ -27,6 +33,11 @@ void Die::draw(wchar_t* screen, int x, int y)
     }
 
     drawFace(screen, x ,y);
+
+    if (held == true)
+    {
+        wsprintf(&screen[(y+6) * screenWidth + x+2], L"Held!");
+    }
 };
 
 void Die::drawFace(wchar_t* screen, int x, int y)

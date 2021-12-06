@@ -1,5 +1,6 @@
 #pragma once
 #include <random>
+#include <Windows.h>
 #include <time.h> 
 
 class Die
@@ -8,6 +9,8 @@ class Die
 
 		int m_value;
 		int screenWidth;
+		bool held;
+
 		wchar_t die[5][9] =
 		{
 			{' ', '-', '-', '-', '-', '-', '-', '-', ' '},
@@ -30,6 +33,11 @@ class Die
 
 		void setValue(int value) { m_value = value;};
 		int getValue() const { return m_value;};
+
+		void setHeld(bool value) { held = value; };
+		bool getHeld() { return held;};
+
+		void swap() { held ? held = false : held = true;};
 
 
 };

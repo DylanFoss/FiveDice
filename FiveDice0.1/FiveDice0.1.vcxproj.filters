@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="FiveDice0.1.cpp">
+    <ClCompile Include="FiveDice.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Die.cpp">
@@ -30,6 +30,12 @@
     <ClCompile Include="ScoreTable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerTable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Die.h">
@@ -42,6 +48,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ScoreTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerTable.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
