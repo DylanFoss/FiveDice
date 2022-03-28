@@ -4,6 +4,8 @@
 ## Overview
 Created back in June 2021 to mess around with the windows consoles to make lightweight ascii game, this being my first attempt.
 
+Supports up to 4 players locally.
+
 ## CONTROLS:
 
 arrow keys up and down to move through menu options.
