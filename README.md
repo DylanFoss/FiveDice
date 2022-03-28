@@ -18,4 +18,4 @@ numbers keys 1-5 to "hold" and "unhold" dice to save between rolls.
 
 ## RULES:
 
-Players roll 5 dice up to 3 times and then get to select from multiple scoring combination for their rolled dice. After every scoring combination has been exhausted, the game ends and all points are counted. Highest score wins.
+Players roll 5 dice up to 3 times and then get to select from multiple scoring combinations for their rolled dice. After every scoring combination has been exhausted, the game ends and all points are counted. Highest score wins.
