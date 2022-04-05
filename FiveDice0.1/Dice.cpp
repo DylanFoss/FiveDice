@@ -5,28 +5,26 @@
 std::array<Die, 5> dice;
 std::array<int, 13> scores;
 
-// the array is supposed to take these values as elements, but I broke it TO-DO:
-
-// upper table
-int score_Aces = 0;
-int score_Twos = 0;
-int score_Threes = 0;
-int score_Fours = 0;
-int score_Fives = 0;
-int score_Sixes = 0;
-
-// lower table
-int score_ThreeOfAKind = 0;
-int score_FourOfAKind = 0;
-int score_FullHouse = 0; // one pair one triple
-int score_SmallStraight = 0; // 4 consecutively
-int score_LargeStraight = 0; // 12345 or 23456
-int score_Yahtzee = 0;	// five of a kind
-int score_Chance = 0; // adds all dice values up
-
 
 Dice::Dice()
 {
+	// upper table
+	score_Aces = 0;
+	score_Twos = 0;
+	score_Threes = 0;
+	score_Fours = 0;
+	score_Fives = 0;
+	score_Sixes = 0;
+
+	// lower table
+	score_ThreeOfAKind = 0;
+	score_FourOfAKind = 0;
+	score_FullHouse = 0; // one pair one triple
+	score_SmallStraight = 0; // 4 consecutively
+	score_LargeStraight = 0; // 12345 or 23456
+	score_Yahtzee = 0;	// five of a kind
+	score_Chance = 0; // adds all dice values up
+
 	srand(time(NULL));
 	for (int i = 0; i < 5; i++)
 		dice[i] = Die();
@@ -94,7 +92,7 @@ void Dice::match()
 			}
 			else // pattern element is numeric (consecutive)
 			{
-				//this is fucking disgusting, I hate this so much.
+				// convers a numeric char to a matching integer.
 				match &= ((pattern[i] - '0') == dice[i].getValue());
 			}
 		}
