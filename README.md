@@ -1,7 +1,7 @@
 # FiveDice
  A simple command line game of "Five Dice", a.k.a Yatzhee (other dice based games are avaliable.)
  
- This will only work on MS Windows, as it uses windows libaries.
+ This will only work on Windows, as it uses the command line.
 
 ## Overview
 Created back in June 2021 to mess around with the windows consoles to make lightweight ascii game, this being my first attempt.
